@@ -32,9 +32,3 @@ def capture_image(camera):
         file_path.folder, file_path.name, gp.GP_FILE_TYPE_NORMAL)
     camera_file.save(target)
     return 0
-  
-if __name__ == "__main__":
-    if not os.path.exists('pics'):
-        os.makedirs('pics')
-        
-    sys.exit(capture_image_from_dslr())
